@@ -187,7 +187,7 @@ function subNav() {
             <ul
               className={` ${
                 menu ? "translate-x-0" : "-translate-x-full"
-              } lg:hidden flex flex-col absolute  bg-white  mt-10  gap-6 w-full left-0  text-md font-medium font-work`}
+              } lg:hidden flex flex-col absolute  bg-white  mt-10  gap-6 w-full left-0  p-4  text-md font-medium font-work`}
             >
               <li>
                 <Link

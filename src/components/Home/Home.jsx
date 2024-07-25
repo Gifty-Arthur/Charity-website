@@ -1,10 +1,13 @@
+// Home.jsx
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import back from "../../assets/Images/Home/back.png";
-import hbg2 from "../../assets/Images/Home/hbg2.png";
-import hbg3 from "../../assets/Images/Home/hbg3.png";
+// import hbg2 from "../../assets/Images/Home/hbg2.png";
+// import hbg3 from "../../assets/Images/Home/hbg3.png";
+import Education from "./Education";
 
 function Home() {
   return (
@@ -14,8 +17,8 @@ function Home() {
         slidesPerView={1}
         loop={true}
         autoplay={{
-          delay: 3000, // Slide delay in milliseconds
-          disableOnInteraction: false, // Enable autoplay even after interaction
+          delay: 3000,
+          disableOnInteraction: false,
         }}
         history={{
           key: "slide",
@@ -47,14 +50,14 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="flex flex-row md:gap-4 md:mt-4 mt-2 gap-2">
+                <div className="flex flex-row md:gap-4 mt-4  gap-2">
                   <a href="" target="_blank" rel="noopener noreferrer">
-                    <button className=" md:w-[115px] w-[85px] md:h-[45px] h-[25px] bg-primary rounded-md text-white hover:bg-custom3 ">
+                    <button className=" md:w-[115px] w-[85px] md:h-[45px] h-[25px] bg-primary rounded-sm text-white hover:bg-custom3 shadow-md ">
                       DONATE
                     </button>
                   </a>
                   <a href="" target="_blank" rel="noopener noreferrer">
-                    <button className=" md:w-[115px] w-[85px] md:h-[45px] h-[25px] bg-white md:text-md text-sm rounded-md text-tertiary hover:bg-primary hover:text-white ">
+                    <button className=" md:w-[115px] w-[85px] md:h-[45px] h-[25px] bg-white md:text-md text-sm rounded-sm text-tertiary hover:bg-primary hover:text-white ">
                       DISCOVER
                     </button>
                   </a>
@@ -70,6 +73,8 @@ function Home() {
           <img src={hbg3} alt="Slide 3" />
         </SwiperSlide> */}
       </Swiper>
+
+      <Education />
     </div>
   );
 }
