@@ -18,7 +18,7 @@ function subNav() {
           <img src={logo} alt="" />
           <div>
             {/* main web */}
-            <ul>
+            <ul className="text-md font-medium font-work">
               <li>
                 <Link
                   to="/"
@@ -51,63 +51,95 @@ function subNav() {
                 >
                   Pages
                   {isOpen ? (
-                    <FaChevronUp className="ml-2 mt-1" />
+                    <FaChevronUp size={10} className="ml-1 mt-1" />
                   ) : (
-                    <FaChevronDown className="ml-2" />
+                    <FaChevronDown size={10} className="ml-1 mt-1" />
                   )}
                 </button>
                 <ul
-                  className={`absolute ${
+                  className={`absolute  ${
                     isOpen ? "block" : "hidden"
-                  } space-y-2 bg-white border border-gray-300`}
+                  } space-y-2 bg-white rounded border-[1px] py-4 border-gray-300 top-[30px] w-[180px] shadow-md`}
                 >
-                  <li>
+                  <li className="hover:bg-gray-300">
                     <Link
-                      to="Our Team"
+                      to="/"
                       spy={true}
                       smooth={true}
                       duration={500}
-                      className="text-gray-800 cursor-pointer"
+                      className="text-gray-800 cursor-pointer px-8 p-1 block w-full"
                     >
                       Volunteer
                     </Link>
                   </li>
 
-                  <li>
+                  <li className="hover:bg-gray-300">
                     <Link
-                      to="Organic Food"
+                      to="/"
                       spy={true}
                       smooth={true}
                       duration={500}
-                      className="text-gray-800 cursor-pointer"
+                      className="text-gray-800 cursor-pointer px-8 p-1 block w-full"
                     >
                       Causes
                     </Link>
                   </li>
-                  <li>
+                  <li className="hover:bg-gray-300">
                     <Link
-                      to="Organic Food"
+                      to="/"
                       spy={true}
                       smooth={true}
                       duration={500}
-                      className="text-gray-800 cursor-pointer"
+                      className="text-gray-800 cursor-pointer px-8 p-1 block w-full"
                     >
                       Team
                     </Link>
                   </li>
-                  <li>
+                  <li className="hover:bg-gray-300">
                     <Link
-                      to="Organic Food"
+                      to="/"
                       spy={true}
                       smooth={true}
                       duration={500}
-                      className="text-gray-800 cursor-pointer"
+                      className="text-gray-800 cursor-pointer px-8 p-1 block w-full"
                     >
-                      Project
+                      Projects
                     </Link>
                   </li>
                 </ul>
               </div>
+
+              {/* Events */}
+              <li>
+                <Link
+                  to="/"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className=" transition-all cursor-pointer "
+                >
+                  Event
+                </Link>
+              </li>
+              {/* contact */}
+              <li>
+                <Link
+                  to="/"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className=" transition-all cursor-pointer "
+                >
+                  Contact
+                </Link>
+              </li>
+
+              {/* button */}
+              <Link>
+                <button className=" w-[125px] h-[35px] bg-primary rounded-lg text-white">
+                  DONATE
+                </button>
+              </Link>
             </ul>
           </div>
         </div>
