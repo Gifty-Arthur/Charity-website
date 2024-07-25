@@ -14,7 +14,8 @@ export default {
         custom1: '#ECF1F0',
         custom2: '#F2F2F2',
         custom3:'#727272',
-        custom4: '#FFFFFF'
+        custom4: '#FFFFFF',
+        custom5: '#126360'
         
 
       },
