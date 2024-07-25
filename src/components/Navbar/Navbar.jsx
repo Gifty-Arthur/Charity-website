@@ -11,7 +11,7 @@ import { FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div>
-      <div className="w-full h-[62px] bg-secondary ">
+      <div className="w-full h-[62px] bg-secondary sm:flex hidden ">
         <div className="container ">
           <div className="flex items-center justify-between">
             <div className="flex flex-row gap-8 text-custom5 text-md font-work ">
