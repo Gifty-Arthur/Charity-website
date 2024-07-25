@@ -11,7 +11,7 @@ import { FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div>
-      <div className="w-full h-[72px] bg-secondary ">
+      <div className="w-full h-[62px] bg-secondary ">
         <div className="container ">
           <div className="flex items-center justify-between">
             <div className="flex flex-row gap-8 text-custom5 text-md font-work ">
@@ -30,7 +30,7 @@ const Navbar = () => {
               </a>
             </div>
             {/* Social media */}
-            <div className="flex flex-row gap-2 w-[130px] bg-[#4BC9C4]  h-[70px] items-center justify-center">
+            <div className="flex flex-row gap-2 w-[130px] bg-[#4BC9C4]  h-[60px] items-center justify-center">
               <a href="" target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={17} className="hover:text-custom1" />
               </a>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 //images
 import logo from "../../assets/Images/Home/logo.png";
 //icons
@@ -7,25 +7,32 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 function subNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
   return (
-    <div className="w-full h-[114] bg-white">
+    <div className="w-full h-[68px] bg-white shadow-md">
       <div className="container">
-        <div>
-          <img src={logo} alt="" />
-          <div>
+        <div className=" flex items-center justify-between">
+          <a href="">
+            <img src={logo} alt="" className="cursor-pointer" />
+          </a>
+          <div className="">
             {/* main web */}
-            <ul className="text-md font-medium font-work">
+            <ul className="text-md font-medium font-work flex flex-row space-x-8 mt-4 items-center justify-center">
               <li>
                 <Link
                   to="/"
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className=" transition-all cursor-pointer "
+                  className={`transition-all cursor-pointer hover:text-primary ${
+                    isHomePage ? "text-red-500" : ""
+                  }`}
                 >
                   Home
                 </Link>
@@ -38,7 +45,9 @@ function subNav() {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className=" transition-all cursor-pointer "
+                  className={`transition-all cursor-pointer hover:text-primary ${
+                    isHomePage ? "" : ""
+                  }`}
                 >
                   About Us
                 </Link>
@@ -47,7 +56,9 @@ function subNav() {
               <div className="relative">
                 <button
                   onClick={toggleDropdown}
-                  className="flex items-center text-gray-800 cursor-pointer"
+                  className={`transition-all cursor-pointer hover:text-primary flex items-center ${
+                    isHomePage ? "" : ""
+                  }`}
                 >
                   Pages
                   {isOpen ? (
@@ -116,7 +127,9 @@ function subNav() {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className=" transition-all cursor-pointer "
+                  className={`transition-all cursor-pointer hover:text-primary ${
+                    isHomePage ? "" : ""
+                  }`}
                 >
                   Event
                 </Link>
@@ -128,18 +141,20 @@ function subNav() {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className=" transition-all cursor-pointer "
+                  className={`transition-all cursor-pointer hover:text-primary ${
+                    isHomePage ? "" : ""
+                  }`}
                 >
                   Contact
                 </Link>
               </li>
 
               {/* button */}
-              <Link>
-                <button className=" w-[125px] h-[35px] bg-primary rounded-lg text-white">
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <button className=" w-[115px] h-[35px] bg-primary rounded-sm text-white hover:bg-custom3 -mt-4">
                   DONATE
                 </button>
-              </Link>
+              </a>
             </ul>
           </div>
         </div>
