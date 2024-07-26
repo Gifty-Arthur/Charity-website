@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+import Little from "./Little";
 //icons
 import { MdArrowRight } from "react-icons/md";
 import { IoMdCheckmarkCircle } from "react-icons/io";
@@ -98,7 +99,7 @@ const Education = () => {
               </a>
             </div>
             {/* b */}
-            <div className=" md:w-[449px] md:h-[362px] bg-[#ecf1f0] w-full ">
+            <div className=" md:w-[449px] md:h-[379px] bg-[#ecf1f0] w-full ">
               <div className="p-8 mt-8">
                 <div className="flex flex-row gap-8">
                   <div className="flex flex-col">
@@ -158,6 +159,7 @@ const Education = () => {
           </div>
         </div>
       </div>
+      <Little />
     </div>
   );
 };
