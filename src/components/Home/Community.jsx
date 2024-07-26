@@ -6,7 +6,7 @@ const community = () => {
   return (
     <div>
       <div className="relative h-[500px]">
-        <img src={ebg1} alt=" " className="md:h-auto  h-full" />
+        <img src={ebg1} alt=" " className="md:h-auto  h-[910px]" />
 
         <div className="absolute inset-0 ">
           <div className="container">
@@ -34,7 +34,73 @@ const community = () => {
                 </a>
               </div>
               {/* becom */}
-              <div className="md:w-[569px] md:h-[549px] w-[200px] h-full border-2 md:mt-0 mt-6"></div>
+              <div className="md:w-[569px] md:h-[529px] w-[399px] h-[410px] border-2 md:mt-0 mt-6">
+                <form className="max-w-sm mx-auto px-4 md:mt-16">
+                  <h1 className="text-white font-mincho text-2xl mt-4 font-extrabold">
+                    Become A Volunteer
+                  </h1>
+                  <div className="mb-5">
+                    <label
+                      htmlFor="FullName"
+                      className="block mb-2 text-sm font-medium text-white dark:text-white"
+                    ></label>
+                    <input
+                      type="name"
+                      id="name"
+                      className=" border border-white  text-sm block w-[359px] p-2.5 bg-transparent  font-work text-md dark:border-white dark:placeholder-white dark:text-white  "
+                      placeholder="Full Name*"
+                      required
+                    />
+                  </div>
+                  <div className="mb-5">
+                    <label
+                      htmlFor="email"
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    ></label>
+                    <input
+                      type="email"
+                      id="email"
+                      className=" border border-white  text-sm block w-[359px] p-2.5 bg-transparent  font-work text-md dark:border-white dark:placeholder-white dark:text-white  "
+                      placeholder="Email Adress*"
+                      required
+                    />
+                  </div>
+
+                  <div className="mb-5">
+                    <label
+                      htmlFor="number"
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    ></label>
+                    <input
+                      type="number"
+                      id="number"
+                      className=" border border-white  text-sm block w-[359px] p-2.5 bg-transparent  font-work text-md dark:border-white dark:placeholder-white dark:text-white  "
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                  <div className="mb-5">
+                    <label
+                      htmlFor=""
+                      className=" text-sm font-medium text-white dark:text-white"
+                    ></label>
+                    <input
+                      type=""
+                      id=""
+                      className=" border border-white  text-sm block w-[359px] h-[90px] p-2.5 bg-transparent  font-work text-md dark:border-white dark:placeholder-white dark:text-white  "
+                      placeholder="Message"
+                      required
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="text-tertiary bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none  font-medium  text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-white dark:hover:bg-primary rounded-full md:mt-4"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
