@@ -13,7 +13,7 @@ const Education = () => {
       <div className="container">
         {/* educatio  */}
         <div className="md:flex flex-row items center justify-center">
-          <div className="bg-secondary md:w-[398px] md:h-[330px] w-full h-[250px] md:-mt-16 -mt-2 shadow-md flex items-center justify-center ">
+          <div className="bg-secondary md:w-[398px] md:h-[330px] w-full h-[250px] md:-mt-16 mt-2 shadow-md flex items-center justify-center ">
             <div className="md:p-4 p-2">
               <h1 className="text-tertiary font-extrabold md:text-[35px] font-mincho ">
                 Education
@@ -101,7 +101,7 @@ const Education = () => {
             {/* b */}
             <div className=" md:w-[449px] md:h-[379px] bg-[#ecf1f0] w-full ">
               <div className="p-8 mt-8">
-                <div className="flex flex-row gap-8">
+                <div className="flex md:flex-row md:gap-8  items-center justify-between">
                   <div className="flex flex-col">
                     <div className="flex flex-row gap-2">
                       <IoMdCheckmarkCircle className="text-secondary mt-1" />
@@ -132,6 +132,7 @@ const Education = () => {
                     </div>
                   </div>
                 </div>
+
                 {/* total */}
                 <div className="mt-8">
                   <h1 className="font-extrabold font-mincho text-[25px] text-tertiary">
@@ -149,7 +150,7 @@ const Education = () => {
                     </p>
                   </div>
                   <a href="" target="_blank" rel="noopener noreferrer">
-                    <button className=" w-[115px] h-[45px]  bg-white md:text-md text-sm rounded-sm text-tertiary hover:bg-primary hover:text-white md:mt-14 mt-8 ">
+                    <button className=" w-[115px] h-[45px]  bg-white md:text-md text-sm rounded-sm text-tertiary hover:bg-primary hover:text-white md:mt-8 mt-8 ">
                       DONATE
                     </button>
                   </a>{" "}
