@@ -1,6 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
+import Featured from "./Featured";
+
 import icon2 from "../../assets/Images/Education/icon2.png";
 import icon3 from "../../assets/Images/Education/icon3.png";
 import icon4 from "../../assets/Images/Education/icon4.png";
@@ -115,6 +117,7 @@ function Medicine() {
           </div>
         </div>
       </div>
+      <Featured />
     </div>
   );
 }
