@@ -1,9 +1,13 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import p1 from "../../assets/Images/Projects/p1.png";
 import p2 from "../../assets/Images/Projects/p2.png";
-import p3 from "../../assets/Images/Projects/p3.png";
-import p5 from "../../assets/Images/Projects/p5.png";
-import p6 from "../../assets/Images/Projects/p6.png";
+import t1 from "../../assets/Images/Projects/t1.png";
+import as from "../../assets/Images/Projects/as.png";
+import t2 from "../../assets/Images/Projects/t2.png";
+
+import Numbers from "./Numbers";
+
 const Featured = () => {
   return (
     <div>
@@ -33,52 +37,86 @@ const Featured = () => {
                 <img
                   src={p1}
                   alt=""
-                  className="md:w-[480px] md:h-[221px] w-[120px] h-[110px]"
+                  className="md:w-[480px] md:h-[221px] w-full h-[110px]"
                 />
                 <img
                   src={p2}
                   alt=""
-                  className="md:w-[480px] md:h-[221px] w-[120px] h-[110px]"
+                  className="md:w-[480px] md:h-[221px] w-full h-[110px]"
                 />
               </div>
             </div>
             {/* 2nd image */}
-            <div className="md:flex">
-              <img
-                src={p3}
-                alt=""
-                className="md:w-[240px] md:h-[221px] w-[120px] h-[110px]"
-              />
-              <img
-                src={p5}
-                alt=""
-                className="md:w-[240px] md:h-[221px] w-[120px] h-[110px]"
-              />
+          </div>
+        </div>
 
-              {/*  */}
-              <div className="md:w-[310px] md:h-[223px] bg-primary ">
-                <div className="flex flex-row gap-4 p-4">
-                  <div className="w-[97px] h-[27px]  rounded-full  bg-[#E85353] mt-14">
-                    <p className="text-white text-sm text-center">Education</p>
-                  </div>
-                  <div className="w-[97px] h-[27px]  rounded-full  bg-[#E85353] mt-14">
-                    <p className="text-white text-sm text-center">Education</p>
+        {/* testimonials */}
+        <div className="md:mt-20 mt-10">
+          <div className="text-center">
+            <p className="font-sue text-primary md:text-[35px] ">Testimonial</p>
+            <h1 className="font-mincho font-extrabold md:text-4xl text-md">
+              What People Say About Us
+            </h1>
+          </div>
+          <div className="md:mt-16 mt-8">
+            <div className="md:flex items-center justify-between ">
+              <div className="md:w-[550px] md:h-[307px] bg-custom1 w-full h-full">
+                <div className="flex flex-row md:gap-6 gap-4 md:p-8">
+                  <img src={t1} alt="" className="" />
+                  <div className="flex flex-col mt-8">
+                    <div className="flex items-center justify-between">
+                      <p className="text-tertiary md:text-xl text-md font-mincho font-bold">
+                        Belli Smith
+                      </p>
+                      <img
+                        src={as}
+                        alt=""
+                        className="md:w-[77px] md:h-[57px] w-[36px] h-[26px] md:mt-0 mt-2"
+                      />
+                    </div>
+                    <p className="font-work text-custom3 text-md md:-mt-4">
+                      Designer
+                    </p>
+                    <p className="font-work text-custom3 text-sm md:text-md mt-4">
+                      Centuries but also the leap into electronic
+                      typesetting,established fact that a reader will
+                      bdistracted the readable content.
+                    </p>
                   </div>
                 </div>
-                <h1 className="text-2xl   ml-4 text-white font-mincho">
-                  More than One <br />
-                  Life Changed{" "}
-                </h1>
               </div>
-              <img
-                src={p6}
-                alt=""
-                className="md:w-[312px] md:h-[221px] w-[120px] h-[110px]"
-              />
+              {/* 2nd test */}
+              <div className="md:w-[550px] md:h-[307px] bg-custom1 w-full h-full md:mt-0 mt-4">
+                <div className="flex flex-row md:gap-6 gap-4 md:p-8">
+                  <img src={t2} alt="" className="" />
+                  <div className="flex flex-col mt-8">
+                    <div className="flex items-center justify-between">
+                      <p className="text-tertiary md:text-xl text-md font-mincho font-bold">
+                        Sara Taylor
+                      </p>
+
+                      <img
+                        src={as}
+                        alt=""
+                        className="md:w-[77px] md:h-[57px] w-[36px] h-[26px] md:mt-0 mt-2"
+                      />
+                    </div>
+                    <p className="font-work text-custom3 text-md md:-mt-4">
+                      Donator
+                    </p>
+                    <p className="font-work text-custom3 text-sm md:text-md mt-4">
+                      Centuries but also the leap into electronic
+                      typesetting,established fact that a reader will
+                      bdistracted the readable content.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <Numbers />
     </div>
   );
 };
