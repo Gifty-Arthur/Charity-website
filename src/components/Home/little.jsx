@@ -228,8 +228,8 @@ const little = () => {
                   {/* img6 */}
                 </div>
               </Swiper>
-              <div className="swiper-button-prev-custom swiper-button-prev mt-20"></div>
-              <div className="swiper-button-next-custom swiper-button-next mt-20"></div>
+              <div className="swiper-button-prev-custom swiper-button-prev "></div>
+              <div className="swiper-button-next-custom swiper-button-next "></div>
             </div>
             {/* Mobile view */}
             <div className="flex sm:hidden">
