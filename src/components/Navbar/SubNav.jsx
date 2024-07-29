@@ -169,8 +169,8 @@ function subNav() {
         </div>
 
         {/* mobile view */}
-        <div className="sm:hidden">
-          <div className="flex items-center justify-between">
+        <div className="sm:hidden ">
+          <div className="flex items-center justify-between ">
             <a href="">
               <img src={logo} alt="" className="cursor-pointer mt-2" />{" "}
             </a>

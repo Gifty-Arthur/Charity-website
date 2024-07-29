@@ -9,7 +9,6 @@ import { MdFacebook } from "react-icons/md";
 import { FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
 
 const Footer = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   return (
@@ -48,8 +47,8 @@ const Footer = () => {
             </div>
           </div>
           {/* About */}
-          <div className="md:w-[723px] h-[269px] bg-[#384C56] py-4 mt-10">
-            <div className="flex items-center justify-between">
+          <div className="md:w-[723px] w-full md:h-[269px] bg-[#384C56] py-4 mt-10">
+            <div className="md:flex items-center justify-between ">
               <div className="flex flex-col p-6">
                 <h1 className="font-mincho font-bold text-xl text-white">
                   Get Involved
