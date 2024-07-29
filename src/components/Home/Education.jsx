@@ -9,7 +9,7 @@ import ed1 from "../../assets/Images/Education/ed1.png";
 
 const Education = () => {
   return (
-    <div className="relative z-20">
+    <div className="relative md:z-10">
       <div className="container">
         {/* educatio  */}
         <div className="md:flex flex-row items center justify-center">
