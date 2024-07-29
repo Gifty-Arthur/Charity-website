@@ -384,7 +384,7 @@ function Numbers({ counterOn, setCounterOn }) {
               Take Look At Recent Blog Posts
             </h1>
             <a href="" target="_blank" rel="noopener noreferrer">
-              <button className=" w-[129px] h-[45px]  bg-tertiary md:text-md text-sm rounded-full text-white hover:bg-primary hover:text-white md:mt-12 mt-8   ">
+              <button className=" w-[129px] h-[45px]  bg-tertiary md:text-md text-sm rounded-full text-white hover:bg-primary hover:text-white md:mt-16 mt-8   ">
                 SEE OUR BLOGS
               </button>
             </a>{" "}
