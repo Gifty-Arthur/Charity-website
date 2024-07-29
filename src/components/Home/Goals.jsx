@@ -40,7 +40,7 @@ const little = () => {
               </div>
               <a href="" target="_blank" rel="noopener noreferrer">
                 <button className=" w-[115px] h-[45px]  bg-primary md:text-md text-sm rounded-sm text-white hover:bg-primary hover:text-white md:mt-14 mt-8 ">
-                  MORE CAUSES
+                  MORzE CAUSES
                 </button>
               </a>
             </div>
@@ -228,8 +228,6 @@ const little = () => {
                   {/* img6 */}
                 </div>
               </Swiper>
-              <div className="swiper-button-prev-custom swiper-button-prev "></div>
-              <div className="swiper-button-next-custom swiper-button-next "></div>
             </div>
             {/* Mobile view */}
             <div className="flex sm:hidden">
