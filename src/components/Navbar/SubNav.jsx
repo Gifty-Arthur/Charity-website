@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { urls } from "../Helpers/routes";
 //images
 import logo from "../../assets/Images/Home/logo.png";
 //icons
@@ -12,6 +13,7 @@ function subNav() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+  const isAboutPage = location.pathname === "/";
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -50,12 +52,12 @@ function subNav() {
               {/* about */}
               <li>
                 <Link
-                  to="/"
+                  to={urls.about}
                   spy={true}
                   smooth={true}
                   duration={500}
                   className={`transition-all cursor-pointer hover:text-primary ${
-                    isHomePage ? "" : ""
+                    isAboutPage ? "text-primary" : ""
                   }`}
                 >
                   About Us
@@ -206,7 +208,7 @@ function subNav() {
               {/* about */}
               <li>
                 <Link
-                  to="/"
+                  to={urls.about}
                   spy={true}
                   smooth={true}
                   duration={500}

@@ -217,7 +217,11 @@ function Numbers({ counterOn, setCounterOn }) {
                 <p className="text-md text-tertiary font-work p-4 md:ml-0 ml-10">
                   Centuries but also the leap electtypesetting, remaining{" "}
                 </p>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdv2SmFg74PI7srZVQMLwiNxBS3ZO5PUe492SmxOzSBTtNfMw/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button className=" w-[190px]  h-[45px]  bg-tertiary rounded-full text-white hover:bg-custom3 shadow-md  mt-10">
                     JOIN US TODAY
                   </button>
