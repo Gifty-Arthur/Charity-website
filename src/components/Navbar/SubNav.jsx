@@ -85,7 +85,7 @@ function subNav() {
                 >
                   <li className="hover:bg-gray-300">
                     <Link
-                      to="/"
+                      to={urls.volunteer}
                       spy={true}
                       smooth={true}
                       duration={500}

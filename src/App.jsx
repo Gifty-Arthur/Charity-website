@@ -4,6 +4,7 @@ import NavFoot from "./components/Layout/NavFoot";
 import Home from "./components/Home/Home";
 import { urls } from "./components/Helpers/routes";
 import About from "./components/About/About";
+import Volunteer from "./components/Pages/Volunteer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
 
           <Route path={urls.about} element={<About />} />
+          <Route path={urls.volunteer} element={<Volunteer />} />
         </Route>
       </Routes>
     </div>
