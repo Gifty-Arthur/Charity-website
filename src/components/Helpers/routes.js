@@ -4,7 +4,9 @@
 export const urls = {
     about:"/about",
     home: "/",
-    volunteer: "/volunteer"
+    volunteer: "/volunteer",
+    causes: "/causes",
+    team:"/team"
 
     
     

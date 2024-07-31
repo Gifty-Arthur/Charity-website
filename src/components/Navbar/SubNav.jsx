@@ -97,7 +97,7 @@ function subNav() {
 
                   <li className="hover:bg-gray-300">
                     <Link
-                      to="/"
+                      to={urls.causes}
                       spy={true}
                       smooth={true}
                       duration={500}
@@ -108,7 +108,7 @@ function subNav() {
                   </li>
                   <li className="hover:bg-gray-300">
                     <Link
-                      to="/"
+                      to={urls.team}
                       spy={true}
                       smooth={true}
                       duration={500}

@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 //images
 import vt1 from "../../assets/Images/About/vt1.png";
