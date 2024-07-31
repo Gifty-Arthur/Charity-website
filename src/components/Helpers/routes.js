@@ -10,7 +10,8 @@ export const urls = {
     project: "/project",
     event: "/event",
     contact: "/contact",
-    found: "/found"
+    found: "/found",
+    blog: "/blog"
 
     
     

@@ -11,6 +11,7 @@ import Project from "./components/Pages/Project";
 import Event from "./components/Pages/Event";
 import Contact from "./components/Pages/Contact";
 import Found from "./components/Pages/Found";
+import Blog from "./components/Pages/Blog";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path={urls.event} element={<Event />} />
           <Route path={urls.contact} element={<Contact />} />
           <Route path={urls.found} element={<Found />} />
+          <Route path={urls.blog} element={<Blog />} />
         </Route>
       </Routes>
     </div>

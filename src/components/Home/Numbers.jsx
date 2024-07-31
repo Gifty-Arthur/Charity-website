@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import ScrollTrigger from "react-scroll-trigger";
+import { urls } from "../Helpers/routes";
 
 //icons
 import { MdFacebook } from "react-icons/md";
@@ -387,7 +388,7 @@ function Numbers({ counterOn, setCounterOn }) {
             <h1 className="font-mincho font-extrabold text-4xl text-tertiary text-md">
               Take Look At Recent Blog Posts
             </h1>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href={urls.blog} target="_blank" rel="noopener noreferrer">
               <button className=" w-[129px] h-[45px]  bg-tertiary md:text-md text-sm rounded-full text-white hover:bg-primary hover:text-white md:mt-16 mt-8   ">
                 SEE OUR BLOGS
               </button>

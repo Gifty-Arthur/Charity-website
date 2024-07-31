@@ -4,6 +4,8 @@ import Medicine from "./Medicine";
 import ebg1 from "../../assets/Images/Education/ebg1.png";
 import ed2 from "../../assets/Images/Education/ed2.png";
 
+import { urls } from "../Helpers/routes";
+
 const community = () => {
   return (
     <div>
@@ -30,7 +32,11 @@ const community = () => {
                     and scrambled it to make a type specimen book.
                   </p>
                   <img src={ed2} alt="" className="mt-4" />
-                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={urls.found}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button className=" w-[115px] h-[45px] text-white bg-primary md:text-md text-sm rounded-sm  hover:bg-gray-500 hover:text-white md:mt-8 mt-8 ">
                       DONATE NOW
                     </button>
