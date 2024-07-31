@@ -14,6 +14,9 @@ function subNav() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const isAboutPage = location.pathname === "/";
+  const isPagesPage = location.pathname === "/";
+  const isEventPage = location.pathname === "/";
+  const isContactPage = location.pathname === "/";
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -37,7 +40,7 @@ function subNav() {
             <ul className="text-md font-medium font-work flex flex-row space-x-8 mt-4 items-center justify-center">
               <li>
                 <Link
-                  to="/"
+                  to={urls.home}
                   spy={true}
                   smooth={true}
                   duration={500}
@@ -57,7 +60,7 @@ function subNav() {
                   smooth={true}
                   duration={500}
                   className={`transition-all cursor-pointer hover:text-primary ${
-                    isAboutPage ? "text-primary" : ""
+                    isAboutPage ? "" : "text-primary"
                   }`}
                 >
                   About Us
@@ -68,7 +71,7 @@ function subNav() {
                 <button
                   onClick={toggleDropdown}
                   className={`transition-all cursor-pointer hover:text-primary flex items-center ${
-                    isHomePage ? "" : ""
+                    isPagesPage ? "" : ""
                   }`}
                 >
                   Pages
@@ -139,7 +142,7 @@ function subNav() {
                   smooth={true}
                   duration={500}
                   className={`transition-all cursor-pointer hover:text-primary ${
-                    isHomePage ? "" : ""
+                    isEventPage ? "text-primary" : "text-tertiary"
                   }`}
                 >
                   Event
@@ -153,7 +156,7 @@ function subNav() {
                   smooth={true}
                   duration={500}
                   className={`transition-all cursor-pointer hover:text-primary ${
-                    isHomePage ? "" : ""
+                    isContactPage ? "" : ""
                   }`}
                 >
                   Contact
