@@ -8,6 +8,7 @@ import back from "../../assets/Images/Home/back.png";
 // import hbg2 from "../../assets/Images/Home/hbg2.png";
 // import hbg3 from "../../assets/Images/Home/hbg3.png";
 import Education from "./Education";
+import { urls } from "../Helpers/routes";
 
 function Home() {
   return (
@@ -51,12 +52,20 @@ function Home() {
                 </div>
 
                 <div className="flex flex-row md:gap-4 mt-4  gap-2">
-                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={urls.found}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button className=" md:w-[115px] w-[85px] md:h-[45px] h-[25px] bg-primary rounded-sm text-white hover:bg-custom3 shadow-md ">
                       DONATE
                     </button>
                   </a>
-                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={urls.found}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button className=" md:w-[115px] w-[85px] md:h-[45px] h-[25px] bg-white md:text-md text-sm rounded-sm text-tertiary hover:bg-primary hover:text-white ">
                       DISCOVER
                     </button>

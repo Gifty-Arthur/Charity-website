@@ -119,7 +119,7 @@ function subNav() {
                   </li>
                   <li className="hover:bg-gray-300">
                     <Link
-                      to="/"
+                      to={urls.project}
                       spy={true}
                       smooth={true}
                       duration={500}
@@ -134,7 +134,7 @@ function subNav() {
               {/* Events */}
               <li>
                 <Link
-                  to="/"
+                  to={urls.event}
                   spy={true}
                   smooth={true}
                   duration={500}
@@ -148,7 +148,7 @@ function subNav() {
               {/* contact */}
               <li>
                 <Link
-                  to="/"
+                  to={urls.contact}
                   spy={true}
                   smooth={true}
                   duration={500}
@@ -161,7 +161,7 @@ function subNav() {
               </li>
 
               {/* button */}
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href={urls.found} target="_blank" rel="noopener noreferrer">
                 <button className=" w-[115px] h-[35px] bg-primary rounded-full text-white hover:bg-custom3 -mt-4">
                   DONATE
                 </button>
@@ -193,7 +193,7 @@ function subNav() {
             >
               <li>
                 <Link
-                  to="/"
+                  to={urls.home}
                   spy={true}
                   smooth={true}
                   duration={500}
@@ -241,7 +241,7 @@ function subNav() {
                 >
                   <li className="hover:bg-gray-300">
                     <Link
-                      to="/"
+                      to={urls.volunteer}
                       spy={true}
                       smooth={true}
                       duration={500}
@@ -253,7 +253,7 @@ function subNav() {
 
                   <li className="hover:bg-gray-300">
                     <Link
-                      to="/"
+                      to={urls.causes}
                       spy={true}
                       smooth={true}
                       duration={500}
@@ -264,7 +264,7 @@ function subNav() {
                   </li>
                   <li className="hover:bg-gray-300">
                     <Link
-                      to="/"
+                      to={urls.team}
                       spy={true}
                       smooth={true}
                       duration={500}
@@ -275,7 +275,7 @@ function subNav() {
                   </li>
                   <li className="hover:bg-gray-300">
                     <Link
-                      to="/"
+                      to={urls.project}
                       spy={true}
                       smooth={true}
                       duration={500}
@@ -289,7 +289,7 @@ function subNav() {
               {/* Events */}
               <li>
                 <Link
-                  to="/"
+                  to={urls.event}
                   spy={true}
                   smooth={true}
                   duration={500}
@@ -303,12 +303,12 @@ function subNav() {
               {/* contact */}
               <li>
                 <Link
-                  to="/"
+                  to={urls.contact}
                   spy={true}
                   smooth={true}
                   duration={500}
                   className={`transition-all cursor-pointer hover:text-primary ${
-                    isHomePage ? "" : ""
+                    isHomePage ? "" : "text-primary"
                   }`}
                 >
                   Contact
@@ -316,7 +316,7 @@ function subNav() {
               </li>
 
               {/* button */}
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href={urls.found} target="_blank" rel="noopener noreferrer">
                 <button className=" w-[115px] h-[35px] bg-primary rounded-sm text-white hover:bg-custom3 mt-2">
                   DONATE
                 </button>

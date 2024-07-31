@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 //images
 import mem1 from "../../assets/Images/Causes/mem1.png";
@@ -19,7 +20,7 @@ const Team = () => {
       <div className="relative">
         <img src={mem1} alt="" />
         <div className="absolute inset-0 flex container">
-          <div className="flex flex-col md:mt-40 mt-8">
+          <div className="flex flex-col md:mt-48 mt-8">
             <p className="text-white md:text-5xl text-lg  font-sue mt-2">
               Humanity Peoples...
             </p>

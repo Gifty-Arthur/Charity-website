@@ -6,6 +6,7 @@ import { IoMdCheckmarkCircle } from "react-icons/io";
 //images
 import ed1 from "../../assets/Images/Education/ed1.png";
 import Little from "./Goals";
+import { urls } from "../Helpers/routes";
 
 const Education = () => {
   return (
@@ -23,7 +24,7 @@ const Education = () => {
                   Below Poverty Line is enchmark used by the government of India
                   economic disadvantage.
                 </p>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href={urls.found} target="_blank" rel="noopener noreferrer">
                   <button className=" w-[115px] h-[45px]  bg-white md:text-md text-sm rounded-sm text-tertiary hover:bg-primary hover:text-white md:mt-14 mt-8 ">
                     DISCOVER
                   </button>
@@ -39,7 +40,7 @@ const Education = () => {
                 <p className="text-white text-sm md:mt-2 mt-4 font-work">
                   Below Poverty Line is enchmark used by the government
                 </p>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href={urls.found} target="_blank" rel="noopener noreferrer">
                   <div className="mt-8 text-white underline font-work text-sm md:mt-8 ">
                     JOIN ORGANIZATION
                   </div>
@@ -91,7 +92,7 @@ const Education = () => {
                   galley of type and
                   <br /> scrambled it to make a type specimen book. essentially.
                 </p>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href={urls.about} target="_blank" rel="noopener noreferrer">
                   <button className=" w-[115px] h-[45px]  bg-primary md:text-md text-sm rounded-sm text-white hover:bg-primary hover:text-white md:mt-14 mt-8 ">
                     MORE ABOUT
                   </button>
@@ -147,7 +148,11 @@ const Education = () => {
                         Goal-$10M
                       </p>
                     </div>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={urls.found}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <button className=" w-[115px] h-[45px]  bg-white md:text-md text-sm rounded-sm text-tertiary hover:bg-primary hover:text-white md:mt-8 mt-8 ">
                         DONATE
                       </button>

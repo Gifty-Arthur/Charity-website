@@ -6,6 +6,7 @@ import Community from "./Community";
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { urls } from "../Helpers/routes";
 
 // Import Swiper styles
 import "swiper/css";
@@ -38,7 +39,7 @@ const little = () => {
                   donating little
                 </h1>
               </div>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href={urls.found} target="_blank" rel="noopener noreferrer">
                 <button className=" w-[115px] h-[45px]  bg-primary md:text-md text-sm rounded-sm text-white hover:bg-primary hover:text-white md:mt-14 mt-8 ">
                   MORzE CAUSES
                 </button>
@@ -85,7 +86,11 @@ const little = () => {
                             Goal-$10M
                           </p>
                         </div>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={urls.found}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <button className=" w-[115px] h-[45px]  bg-tertiary md:text-md text-sm rounded-sm text-white hover:bg-primary hover:text-white mt-6  ">
                             DONATE
                           </button>
@@ -117,7 +122,11 @@ const little = () => {
                             Goal-$10M
                           </p>
                         </div>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={urls.found}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <button className=" w-[115px] h-[45px]  bg-tertiary md:text-md text-sm rounded-sm text-white hover:bg-primary hover:text-white mt-6  ">
                             DONATE
                           </button>
@@ -151,7 +160,11 @@ const little = () => {
                             Goal-$10M
                           </p>
                         </div>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={urls.found}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <button className=" w-[115px] h-[45px]  bg-tertiary md:text-md text-sm rounded-sm text-white hover:bg-primary hover:text-white mt-6  ">
                             DONATE
                           </button>
@@ -184,7 +197,11 @@ const little = () => {
                             Goal-$10M
                           </p>
                         </div>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={urls.found}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <button className=" w-[115px] h-[45px]  bg-tertiary md:text-md text-sm rounded-sm text-white hover:bg-primary hover:text-white mt-6  ">
                             DONATE
                           </button>
@@ -217,7 +234,11 @@ const little = () => {
                             Goal-$10M
                           </p>
                         </div>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={urls.found}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <button className=" w-[115px] h-[45px]  bg-tertiary md:text-md text-sm rounded-sm text-white hover:bg-primary hover:text-white mt-6  ">
                             DONATE
                           </button>
@@ -263,7 +284,11 @@ const little = () => {
                           Goal-$10M
                         </p>
                       </div>
-                      <a href="" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={urls.found}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <button className=" w-[115px] h-[45px]  bg-tertiary md:text-md text-sm rounded-sm text-white hover:bg-primary hover:text-white mt-6  ">
                           DONATE
                         </button>
@@ -294,7 +319,11 @@ const little = () => {
                           Goal-$10M
                         </p>
                       </div>
-                      <a href="" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={urls.found}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <button className=" w-[115px] h-[45px]  bg-tertiary md:text-md text-sm rounded-sm text-white hover:bg-primary hover:text-white mt-6  ">
                           DONATE
                         </button>
@@ -326,7 +355,11 @@ const little = () => {
                           Goal-$10M
                         </p>
                       </div>
-                      <a href="" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={urls.found}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <button className=" w-[115px] h-[45px]  bg-tertiary md:text-md text-sm rounded-sm text-white hover:bg-primary hover:text-white mt-6  ">
                           DONATE
                         </button>
@@ -358,7 +391,11 @@ const little = () => {
                           Goal-$10M
                         </p>
                       </div>
-                      <a href="" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={urls.found}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <button className=" w-[115px] h-[45px]  bg-tertiary md:text-md text-sm rounded-sm text-white hover:bg-primary hover:text-white mt-6  ">
                           DONATE
                         </button>

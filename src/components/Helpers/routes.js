@@ -6,7 +6,11 @@ export const urls = {
     home: "/",
     volunteer: "/volunteer",
     causes: "/causes",
-    team:"/team"
+    team:"/team",
+    project: "/project",
+    event: "/event",
+    contact: "/contact",
+    found: "/found"
 
     
     
